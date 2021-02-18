@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface UserDao extends JpaRepository<UserEntity, Integer> {
     List<UserEntity> getUserEntitiesByUserName(String userName);
+
+    List<UserEntity> getUserEntitiesById(int id);
 }
